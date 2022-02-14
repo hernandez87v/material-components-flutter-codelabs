@@ -45,19 +45,21 @@ class _LoginPageState extends State<LoginPage> {
             // TODO: Add TextField widgets (101)
             // [Name]
             TextField(
-              decoration: const InputDecoration(
-                filled: true,
-                labelText: 'Username',
-              ),
+              decoration: InputDecoration(
+                  filled: true,
+                  labelText: 'Username',
+                  fillColor: Colors.indigo[900],
+                  labelStyle: TextStyle(color: Colors.amber[600])),
             ),
             // spacer
             const SizedBox(height: 12.0),
             // [Password]
             TextField(
-              decoration: const InputDecoration(
-                filled: true,
-                labelText: 'Password',
-              ),
+              decoration: InputDecoration(
+                  filled: true,
+                  labelText: 'Password',
+                  fillColor: Colors.indigo[900],
+                  labelStyle: TextStyle(color: Colors.amber[600])),
               obscureText: true,
             ),
             // TODO: Add button bar (101)
