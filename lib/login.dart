@@ -46,20 +46,53 @@ class _LoginPageState extends State<LoginPage> {
             // [Name]
             TextField(
               decoration: InputDecoration(
-                  filled: true,
-                  labelText: 'Username',
-                  fillColor: Colors.indigo[900],
-                  labelStyle: TextStyle(color: Colors.amber[600])),
+                filled: true,
+                hintText: 'Username',
+                fillColor: Colors.indigo[900],
+                focusColor: Colors.white,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 242, 172, 87),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 242, 172, 87),
+                    width: 2.0,
+                  ),
+                ),
+                hintStyle: TextStyle(
+                  color: Colors.amber[600],
+                ),
+              ),
             ),
             // spacer
             const SizedBox(height: 12.0),
             // [Password]
             TextField(
               decoration: InputDecoration(
-                  filled: true,
-                  labelText: 'Password',
-                  fillColor: Colors.indigo[900],
-                  labelStyle: TextStyle(color: Colors.amber[600])),
+                filled: true,
+                hintText: 'Password',
+                fillColor: Colors.indigo[900],
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 242, 172, 87),
+                  ),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: const BorderSide(
+                    color: Color.fromARGB(255, 242, 172, 87),
+                    width: 2.0,
+                  ),
+                ),
+                hintStyle: TextStyle(
+                  color: Colors.amber[600],
+                ),
+              ),
               obscureText: true,
             ),
             // TODO: Add button bar (101)
