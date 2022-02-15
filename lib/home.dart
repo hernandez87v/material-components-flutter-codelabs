@@ -47,6 +47,7 @@ class HomePage extends StatelessWidget {
                 product.assetName,
                 package: product.assetPackage,
                 // TODO: Adjust the box size (102)
+                fit: BoxFit.fitWidth,
               ),
             ),
             Expanded(
