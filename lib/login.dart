@@ -38,7 +38,10 @@ class _LoginPageState extends State<LoginPage> {
               children: <Widget>[
                 Image.asset('assets/Metro.png'),
                 const SizedBox(height: 16.0),
-                const Text('METRO'),
+                Text(
+                  'METRO',
+                  style: Theme.of(context).textTheme.headline5,
+                ),
               ],
             ),
             const SizedBox(height: 120.0),
