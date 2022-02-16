@@ -70,6 +70,9 @@ ThemeData _buildShrineTheme() {
     ),
     // TODO: Add the icon themes (103)
     // TODO: Decorate the inputs (103)
+    inputDecorationTheme: const InputDecorationTheme(
+      border: OutlineInputBorder(),
+    ),
   );
 }
 

@@ -52,28 +52,27 @@ class _LoginPageState extends State<LoginPage> {
             // [Name]
             TextField(
               controller: _usernameController,
-              decoration: InputDecoration(
-                filled: true,
-                hintText: 'Username',
-                fillColor: Colors.indigo[900],
-                focusColor: Colors.white,
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 242, 172, 87),
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 242, 172, 87),
-                    width: 2.0,
-                  ),
-                ),
-                hintStyle: const TextStyle(
-                  color: Color.fromARGB(235, 255, 179, 0),
-                  fontSize: 12,
-                ),
+              decoration: const InputDecoration(
+                labelText: 'Username',
+                // fillColor: Colors.indigo[900],
+                // focusColor: Colors.white,
+                // border: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(30),
+                //   borderSide: const BorderSide(
+                //     color: Color.fromARGB(255, 242, 172, 87),
+                //   ),
+                // ),
+                // focusedBorder: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(30),
+                //   borderSide: const BorderSide(
+                //     color: Color.fromARGB(255, 242, 172, 87),
+                //     width: 2.0,
+                //   ),
+                // ),
+                // labelStyle: const TextStyle(
+                //   color: Color.fromARGB(235, 255, 179, 0),
+                //   fontSize: 12,
+                // ),
               ),
             ),
             // spacer
@@ -81,27 +80,26 @@ class _LoginPageState extends State<LoginPage> {
             // [Password]
             TextField(
               controller: _passwordController,
-              decoration: InputDecoration(
-                filled: true,
-                hintText: 'Password',
-                fillColor: Colors.indigo[900],
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 242, 172, 87),
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
-                  borderSide: const BorderSide(
-                    color: Color.fromARGB(255, 242, 172, 87),
-                    width: 2.0,
-                  ),
-                ),
-                hintStyle: const TextStyle(
-                  color: Color.fromARGB(235, 255, 179, 0),
-                  fontSize: 12,
-                ),
+              decoration: const InputDecoration(
+                labelText: 'Password',
+                // fillColor: Colors.indigo[900],
+                // border: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(30),
+                //   borderSide: const BorderSide(
+                //     color: Color.fromARGB(255, 242, 172, 87),
+                //   ),
+                // ),
+                // focusedBorder: OutlineInputBorder(
+                //   borderRadius: BorderRadius.circular(30),
+                //   borderSide: const BorderSide(
+                //     color: Color.fromARGB(255, 242, 172, 87),
+                //     width: 2.0,
+                //   ),
+                // ),
+                // labelStyle: const TextStyle(
+                //   color: Color.fromARGB(235, 255, 179, 0),
+                //   fontSize: 12,
+                // ),
               ),
               obscureText: true,
             ),
