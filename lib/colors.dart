@@ -14,12 +14,12 @@
 
 import 'package:flutter/material.dart';
 
-const kShrineRed50 = Color(0xFFF2AC57);
-const kShrineRed100 = Color(0xFF1a237e);
+const kShrineRed50 = Color(0xFFF1A03C);
+const kShrineRed100 = Color(0xFF00158c);
 const kShrineRed300 = Color(0xFF534bae);
 const kShrineRed400 = Color(0xFFC02124);
 
-const kShrineBrown900 = Color(0xFFF2AC57);
+const kShrineBrown900 = Color(0xFF000a40);
 
 const kShrineErrorRed = Color(0xFFC5032B);
 

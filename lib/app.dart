@@ -55,7 +55,7 @@ class ShrineApp extends StatelessWidget {
 final ThemeData _kShrineTheme = _buildShrineTheme();
 
 ThemeData _buildShrineTheme() {
-  final ThemeData base = ThemeData.dark();
+  final ThemeData base = ThemeData.light();
   return base.copyWith(
     colorScheme: base.colorScheme.copyWith(
       primary: kShrineRed100,
