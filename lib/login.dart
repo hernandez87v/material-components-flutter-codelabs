@@ -52,8 +52,11 @@ class _LoginPageState extends State<LoginPage> {
             // [Name]
             TextField(
               controller: _usernameController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Username',
+                labelStyle: TextStyle(
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
               ),
             ),
             // spacer
@@ -61,8 +64,11 @@ class _LoginPageState extends State<LoginPage> {
             // [Password]
             TextField(
               controller: _passwordController,
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 labelText: 'Password',
+                labelStyle: TextStyle(
+                  color: Theme.of(context).colorScheme.secondary,
+                ),
               ),
               obscureText: true,
             ),
