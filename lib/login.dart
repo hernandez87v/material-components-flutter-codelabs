@@ -11,9 +11,6 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:shrine/home.dart';
 
@@ -137,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                     // Temporary change to route to navigate back to login
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const HomePage()),
+                      MaterialPageRoute(builder: (context) => HomePage()),
                     );
                   },
                 ),
