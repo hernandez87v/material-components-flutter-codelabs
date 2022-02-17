@@ -25,7 +25,7 @@ class ShrineApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Shrine',
+      title: 'Metro',
       // TODO: Change home: to a Backdrop with a HomePage frontLayer (104)
       home: const HomePage(),
       // TODO: Make currentCategory field take _currentCategory (104)

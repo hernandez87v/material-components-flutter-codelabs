@@ -97,7 +97,10 @@ class HomePage extends StatelessWidget {
             semanticLabel: 'menu',
           ),
           onPressed: () {
-            print('Menu button');
+            // ignore: avoid_print
+            // print('Menu button');
+            //temporary navigation setup to go back/forth to Login page
+            Navigator.pop(context);
           },
         ),
         title: const Text('METRO'),
@@ -109,6 +112,7 @@ class HomePage extends StatelessWidget {
               semanticLabel: 'search',
             ),
             onPressed: () {
+              //ignore: avoid_print
               print('Search button');
             },
           ),
@@ -118,6 +122,7 @@ class HomePage extends StatelessWidget {
               semanticLabel: 'filter',
             ),
             onPressed: () {
+              //ignore: avoid_print
               print('Filter button');
             },
           ),

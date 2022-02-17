@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import 'package:flutter/material.dart';
+import 'package:shrine/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -25,6 +26,7 @@ class _LoginPageState extends State<LoginPage> {
   // TODO: Add text editing controllers (101)
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
+  final _unfocusedColor = Colors.grey[600];
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +92,12 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Text('NEXT'),
                   onPressed: () {
                     // TODO: Show the next page (101)
-                    Navigator.pop(context);
+                    // Navigator.pop(context);
+                    // Temporary change to route to navigate back to login
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomePage()),
+                    );
                   },
                 ),
               ],
