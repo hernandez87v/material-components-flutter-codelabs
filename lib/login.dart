@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 import 'package:flutter/material.dart';
+import 'package:shrine/colors.dart';
 import 'package:shrine/home.dart';
 
 class LoginPage extends StatefulWidget {
@@ -52,13 +53,23 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.symmetric(horizontal: 24.0),
           children: <Widget>[
             const SizedBox(height: 80.0),
-            Column(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Image.asset('assets/Metro.png'),
+                Image.asset('assets/3.0x/Metro.png'),
                 const SizedBox(height: 16.0),
-                Text(
-                  'METRO',
-                  style: Theme.of(context).textTheme.headline5,
+                Column(
+                  children: [
+                    Text(
+                      'METRO',
+                      style: Theme.of(context).textTheme.labelLarge,
+                    ),
+                    Text(
+                      'Traffic Management',
+                      style: Theme.of(context).textTheme.labelSmall,
+                    ),
+                  ],
                 ),
               ],
             ),
