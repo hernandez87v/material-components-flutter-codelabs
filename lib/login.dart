@@ -63,11 +63,11 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     Text(
                       'METRO',
-                      style: Theme.of(context).textTheme.labelLarge,
+                      style: Theme.of(context).textTheme.bodyLarge,
                     ),
                     Text(
                       'Traffic Management',
-                      style: Theme.of(context).textTheme.labelSmall,
+                      style: Theme.of(context).textTheme.labelLarge,
                     ),
                   ],
                 ),
