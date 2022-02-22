@@ -1,4 +1,6 @@
 // ignore_for_file: todo
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 // import 'package:meta/meta.dart';
 
@@ -27,6 +29,34 @@ class Backdrop extends StatefulWidget {
 }
 
 // TODO: Add _FrontLayer class (104)
+class _FrontLayer extends StatelessWidget {
+  // TODO: Add on-tap callback (104)
+  const _FrontLayer({
+    Key? key,
+    required this.child,
+  }) : super(key: key);
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      elevation: 16.0,
+      shape: const BeveledRectangleBorder(
+        borderRadius: BorderRadius.only(topLeft: Radius.circular(46.0)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          // TODO: Add a GestureDetector (104)
+          Expanded(
+            child: child,
+          )
+        ],
+      ),
+    );
+  }
+}
 
 // TODO: Add _BackdropTitle class (104)
 
@@ -43,7 +73,9 @@ class _BackdropState extends State<Backdrop>
       children: <Widget>[
         // TODO: Wrap backLayer in an ExcludeSemantics widget (104)
         widget.backLayer,
-        widget.frontLayer,
+        // TODO: Add a PositionedTransition (104)
+        // TODO: Wrap front layer in _FrontLayer (104)
+        _FrontLayer(child: widget.frontLayer),
       ],
     );
   }
