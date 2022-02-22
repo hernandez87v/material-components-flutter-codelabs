@@ -144,12 +144,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   onPressed: () {
                     // TODO: Show the next page (101)
-                    // Navigator.pop(context);
+                    Navigator.pop(context);
                     // Temporary change to route to navigate back to login
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => HomePage()),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => HomePage()),
+                    // );
                   },
                 ),
               ],
