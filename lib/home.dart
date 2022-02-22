@@ -1,13 +1,15 @@
-// ignore_for_file: avoid_print
+// ignore_for_file: todo
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 
 import 'model/products_repository.dart';
 import 'model/product.dart';
 import 'supplemental/asymmetric_view.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   // TODO: Add a variable for Category (104)
 
   @override

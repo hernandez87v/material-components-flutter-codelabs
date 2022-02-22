@@ -40,8 +40,8 @@ class ShrineApp extends StatelessWidget {
         frontLayer: HomePage(),
         // TODO: Change backLayer field value to CategoryMenuPage (104)
         backLayer: Container(color: kShrineRed100),
-        frontTitle: Text('METRO'),
-        backTitle: Text('MENU'),
+        frontTitle: const Text('METRO'),
+        backTitle: const Text('MENU'),
       ),
       // TODO: Make currentCategory field take _currentCategory (104)
       // TODO: Pass _currentCategory for frontLayer (104)
@@ -79,6 +79,7 @@ ThemeData _buildShrineTheme() {
       error: kShrineErrorRed,
     ),
     // TODO: Add the text themes (103)
+    scaffoldBackgroundColor: kShrineBackgroundWhite,
     textTheme: _buildShrineTextTheme(base.textTheme),
     textSelectionTheme: const TextSelectionThemeData(
       selectionColor: kShrineRed100,
