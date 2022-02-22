@@ -11,9 +11,11 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
+//ignore_for_file: todo
 import 'package:flutter/material.dart';
-import 'package:shrine/colors.dart';
-import 'package:shrine/home.dart';
+// import 'package:shrine/colors.dart';
+// import 'package:shrine/home.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);

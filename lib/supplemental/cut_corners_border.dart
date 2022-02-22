@@ -15,7 +15,7 @@
 import 'dart:ui' show lerpDouble;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+// import 'package:flutter/widgets.dart';
 
 class CutCornersBorder extends OutlineInputBorder {
   const CutCornersBorder({
@@ -79,7 +79,9 @@ class CutCornersBorder extends OutlineInputBorder {
     if (start > 0.0 || extent > 0.0) {
       path.relativeMoveTo(extent + start, center.top);
       _notchedSidesAndBottom(center, path);
-      path..lineTo(center.left + cut, center.top)..lineTo(start, center.top);
+      path
+        ..lineTo(center.left + cut, center.top)
+        ..lineTo(start, center.top);
     } else {
       path.moveTo(center.left + cut, center.top);
       _notchedSidesAndBottom(center, path);

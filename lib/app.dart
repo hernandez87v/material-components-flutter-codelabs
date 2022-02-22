@@ -21,7 +21,6 @@ import 'colors.dart';
 import 'home.dart';
 import 'login.dart';
 import 'model/product.dart';
-import 'supplemental/cut_corners_border.dart';
 
 // TODO: Convert ShrineApp to stateful widget (104)
 class ShrineApp extends StatelessWidget {
@@ -37,7 +36,7 @@ class ShrineApp extends StatelessWidget {
         // TODO: Make currentCategory field take _currentCategory (104)
         currentCategory: Category.all,
         // TODO: Pass _currentCategory for frontLayer (104)
-        frontLayer: HomePage(),
+        frontLayer: const HomePage(),
         // TODO: Change backLayer field value to CategoryMenuPage (104)
         backLayer: Container(color: kShrineRed100),
         frontTitle: const Text('METRO'),

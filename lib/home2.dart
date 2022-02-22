@@ -7,7 +7,11 @@ import 'model/products_repository.dart';
 import 'model/product.dart';
 import 'supplemental/asymmetric_view.dart';
 
+//ignore_for_file: todo
+
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   // TODO: Add a variable for Category (104)
 
   @override

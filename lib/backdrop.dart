@@ -1,6 +1,6 @@
 // ignore_for_file: todo
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
+// import 'package:meta/meta.dart';
 
 import 'model/product.dart';
 
