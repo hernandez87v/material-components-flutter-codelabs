@@ -127,8 +127,6 @@ class _BackdropState extends State<Backdrop>
             child: widget.frontLayer,
           ),
         ),
-        // TODO: Wrap front layer in _FrontLayer (104)
-        _FrontLayer(child: widget.frontLayer),
       ],
     );
   }
