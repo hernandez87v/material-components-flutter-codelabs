@@ -2,9 +2,10 @@
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
-// import 'package:meta/meta.dart';
+import 'package:shrine/login.dart';
 
 import 'model/product.dart';
+import 'login.dart';
 
 // TODO: Add velocity constant (104)
 const double _kFlingVelocity = 2.0;
@@ -241,10 +242,6 @@ class _BackdropState extends State<Backdrop>
       elevation: 0.0,
       titleSpacing: 0.0,
       // TODO: Replace leading menu icon with IconButton (104)
-      leading: IconButton(
-        icon: const Icon(Icons.menu),
-        onPressed: _toggleBackdropLayerVisibility,
-      ),
       // TODO: Remove leading property (104)
       // TODO: Create title with _BackdropTitle parameter (104)
       title: _BackdropTitle(
@@ -258,7 +255,7 @@ class _BackdropState extends State<Backdrop>
         IconButton(
           icon: const Icon(
             Icons.search,
-            semanticLabel: 'search',
+            semanticLabel: 'login',
           ),
           onPressed: () {
             // TODO: Add open login (104)
@@ -267,10 +264,14 @@ class _BackdropState extends State<Backdrop>
         IconButton(
           icon: const Icon(
             Icons.tune,
-            semanticLabel: 'filter',
+            semanticLabel: 'login',
           ),
           onPressed: () {
             // TODO: Add open login (104)
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (BuildContext context) => LoginPage()),
+            );
           },
         ),
       ],
